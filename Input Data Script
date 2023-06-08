@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+int main() {
+
+char name[20];
+printf("Enter Your Name:");
+fgets(name, sizeof(name), stdin);
+
+char Country[20];
+printf("Please Enter Your Country:");
+fgets(Country, sizeof(Country), stdin);
+
+char State[20];
+printf("Please Enter Your State:");
+fgets(State, sizeof(State), stdin);
+
+char Email[30];
+printf("Please Enter Your Email Address:");
+fgets(Email, sizeof(Email), stdin);
+
+char address[50];
+printf("Please Enter Your Address:");
+fgets(address, sizeof(address), stdin);
+
+int age;
+printf("Please Enter Your Age:");
+scanf("%d", &age);
+
+double height;
+printf("Enter Your Height:");
+scanf("%lf", &height);
+
+char answer;
+printf("\n Want to see your information? Enter Y or N: \n");
+scanf(" %c", &answer);
+printf("\n answer is %c\n", answer);
+while (answer == 'Y'){
+
+printf("Name: ");
+    puts(name);    // display string
+    
+    printf("Country: ");
+    puts(Country);    // display string
+    
+    printf("State: ");
+    puts(State);    // display string
+    
+    printf("Email: ");
+    puts(Email);    // display string
+    
+    printf("Adddress: ");
+    puts(address);// display string
+    
+    printf("Your Age is %d.", age);
+    
+    printf("Your Height is %.2lf.", height);
+
+printf("\nDo you want to See your complete information again? Y or N: \n");
+
+scanf(" %c", &answer);
+printf("\n answer is %c\n", answer);
+
+}
+printf("Thanks For The Information!");
+
+return 0;
+
+}
